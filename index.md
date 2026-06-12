@@ -1,15 +1,18 @@
 # Linden Privacy Policy
 
-**Effective date:** 2026-05-20
+**Effective date:** 2026-06-11
 
 ## In one paragraph
 
 Linden estimates your heart rate, heart rate variability (HRV), and respiratory
-rate from short video of your face using your phone's front camera. Every step
-of that measurement — capturing the video, processing it, and storing the
-results — happens entirely on your device. We do not send your video, your
-measurements, or any other personal information to a server. We do not run
-analytics. We do not have user accounts. We do not share your data with anyone.
+rate from short video of your face using your phone's front camera. The video
+itself is captured, processed, and deleted entirely on your device — it is
+never stored and never transmitted, and we never see your face. Your
+measurement history lives on your phone. We have no user accounts and we never
+sell your data. Two narrow things do leave your device: anonymous crash reports
+and usage analytics that keep the app reliable, and — only if you subscribe to
+Linden Plus and opt in — a small set of derived numbers our AI coach uses to
+write a weekly recap. Both are described in full below.
 
 ## What Linden stores on your device
 
@@ -37,12 +40,14 @@ choose to export and share it yourself.
 - We do not collect your name, email address, phone number, or any other
   contact information.
 - We do not create an account for you.
-- We do not run third-party analytics, tracking, advertising, or crash
-  reporters.
-- We do not transmit your measurements, video, or any other personal
-  information off your device.
-- We do not sell, rent, or share any data with third parties, because we
-  do not collect any data centrally to share.
+- We do not run advertising and we do not track you across other apps or
+  websites. The analytics we do run (described below) are anonymous — they
+  are tied to a random identifier generated on your device, never to you.
+- We do not store your video or transmit it anywhere, ever.
+- We do not sell, rent, or share your personal data with third parties. The
+  service providers that process the anonymous data described below (crash
+  reporting, AI recap generation) act on our instructions and never receive
+  your identity.
 
 ## Camera access
 
@@ -52,11 +57,39 @@ brightness averages described above. No video is stored, transmitted, or
 sent anywhere. iOS will ask you to grant camera permission the first time
 you scan, and you can revoke it any time in **Settings → Linden → Camera**.
 
+## Crash reports and anonymous usage analytics
+
+To keep Linden reliable, we collect crash reports and anonymous usage events
+through Sentry. A scan event includes the heart-rate estimate (rounded), the
+signal-confidence score, why a scan was rejected (if it was), capture
+duration, coarse buckets such as age range and skin-tone band, and app and
+device information. These events are tied to a random identifier generated on
+your device — never your name, email, or Apple ID — and are never used for
+advertising or cross-app tracking. Your camera video and raw scan signals
+never leave your phone. If you send us written feedback from the Profile
+screen, we receive the text you typed along with the same random identifier
+and app version.
+
+## AI coach (Linden Plus, opt-in)
+
+If you subscribe to Plus and turn on the AI coach, then when you request a
+weekly recap we send a small set of derived numbers — your average resting
+heart rate with its range and trend, how often you checked in, your streak
+count, and a relative time window such as "the last 30 days" — together with
+your random identifier to our server, which passes them to our AI provider to
+write the recap. Your video, raw scan data, name, email, health conditions,
+and exact dates are never sent. Our server stores none of this — it keeps
+only anonymous counters that limit request rates. You can turn the coach off
+at any time in Profile; this deletes the recap saved on your phone, and
+future recaps are written on-device.
+
 ## How to delete your data
 
-Because everything is stored locally on your phone, the way to delete
-everything Linden knows about you is to delete the Linden app. iOS will
-remove all local storage when you uninstall.
+Because your profile and measurement history are stored locally on your
+phone, the way to delete everything Linden knows about you is to delete the
+Linden app. iOS will remove all local storage when you uninstall. Anonymous
+analytics events that were already sent carry only the random identifier and
+cannot be tied back to you.
 
 ## If you choose to share an export
 
